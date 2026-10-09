@@ -42,7 +42,7 @@ paylaşımlı hostinglerde de çalışır).
 
 ## Hızlı Başlangıç
 
-Doğrulama ucu (`POST /verifyblind/verify`), 15 satır:
+Doğrulama ucu (`POST /verifyblind/verify`), yaklaşık 15 satır:
 
 ```php
 <?php
@@ -222,7 +222,7 @@ needed, so it works on shared hosting).
 
 ### Quick Start
 
-Verify endpoint (`POST /verifyblind/verify`), 15 lines:
+Verify endpoint (`POST /verifyblind/verify`), about 15 lines:
 
 ```php
 <?php
