@@ -1,0 +1,30 @@
+{
+    "name": "verifyblind/verifyblind-php",
+    "description": "Server-side verification of VerifyBlind result tokens and webhooks (RSA-PSS SHA-256, salt 32) for PHP.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": ["verifyblind", "identity", "age-verification", "zero-knowledge", "rsa-pss", "nfc"],
+    "homepage": "https://verifyblind.com/en/developers",
+    "support": {
+        "email": "support@verifyblind.com",
+        "docs": "https://verifyblind.com/ai-integration.md"
+    },
+    "require": {
+        "php": ">=7.4",
+        "phpseclib/phpseclib": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": { "VerifyBlind\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "VerifyBlind\\Tests\\": "tests/" }
+    },
+    "config": {
+        "platform": { "php": "7.4.33" },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
