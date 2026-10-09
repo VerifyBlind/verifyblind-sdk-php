@@ -47,7 +47,7 @@ final class Verifier
         // null = built-in fetcher (curl, or file_get_contents when curl is missing).
         'httpGet' => null,
         // HTTP timeout in seconds for the built-in fetcher.
-        'timeout' => 5,
+        'timeout' => 10,
         // Accept demo-card results (validations.is_test / TEST_ codes) in verify(). Test setups only.
         'allowTestCards' => false,
         // Allowed clock difference for webhook timestamps, in seconds.

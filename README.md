@@ -145,7 +145,7 @@ kütüphanede yoktur (bkz. [example-web-dotnet](https://github.com/VerifyBlind/e
 | `refreshInterval` | `30` | İki zorunlu anahtar tazelemesi arasındaki en kısa süre (sn); bozuk imzalı istekler API'yi yoramaz |
 | `cache` | süreç içi bellek | PSR-16 uyumlu `get()`/`set()` olan her nesne (Redis, APCu…) ya da `new FileCache()` |
 | `httpGet` | curl / `file_get_contents` | `function (string $url): string` — 200 gövdesini döndürür, aksi hâlde istisna atar |
-| `timeout` | `5` | Yerleşik HTTP isteğinin zaman aşımı (sn) |
+| `timeout` | `10` | Yerleşik HTTP isteğinin zaman aşımı (sn) |
 | `allowTestCards` | `false` | `verify()` demo kart sonucunu kabul etsin mi |
 | `webhookTolerance` | `300` | Webhook zaman damgası için izin verilen fark (sn) |
 
@@ -324,7 +324,7 @@ not part of this library (see [example-web-dotnet](https://github.com/VerifyBlin
 | `refreshInterval` | `30` | Minimum time between two forced key refreshes (s), so bad-signature requests cannot hammer the API |
 | `cache` | in-process memory | Any object with PSR-16 `get()`/`set()` (Redis, APCu, …) or `new FileCache()` |
 | `httpGet` | curl / `file_get_contents` | `function (string $url): string` — returns the 200 body, throws otherwise |
-| `timeout` | `5` | Timeout of the built-in HTTP request (s) |
+| `timeout` | `10` | Timeout of the built-in HTTP request (s) |
 | `allowTestCards` | `false` | Whether `verify()` accepts demo-card results |
 | `webhookTolerance` | `300` | Allowed webhook timestamp difference (s) |
 
