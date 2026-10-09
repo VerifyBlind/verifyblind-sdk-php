@@ -15,7 +15,7 @@ final class FileCache
 
     public function __construct(?string $dir = null)
     {
-        $this->dir = rtrim($dir ?? (sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'verifyblind-cache'), '/\');
+        $this->dir = rtrim($dir ?? (sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'verifyblind-cache'), '/\\');
     }
 
     /**
